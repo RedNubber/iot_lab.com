@@ -14,7 +14,7 @@ body{
     flex-direction: column;
 }
 header{
-    max-width: 1500px;
+    max-width: 2000px;
     background: rgba(51, 51, 51, 0.5);
     color: rgb(149, 24, 149);
     font-weight: bold;
