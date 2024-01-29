@@ -14,6 +14,7 @@ body{
     flex-direction: column;
 }
 header{
+    max-width: 1500px;
     background: rgba(51, 51, 51, 0.5);
     color: rgb(149, 24, 149);
     font-weight: bold;
@@ -79,28 +80,27 @@ footer{
     padding-top: 1em;
     background: rgb(57, 210, 172);
 }
-.image-container {
-    position: relative; /* Đặt vị trí là relative để tạo nền cho vị trí tuyệt đối */
+/*-------------------------------------------------Custom header-------------------------------------------------------------*/
+.outer-header{
+    
+    width: 100%;
+    max-width: 800px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    background: white;
+    padding: 2.8rem;
+    border-radius: 2rem;
+    
+}
+.content-header{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 25px;
+    color: rgb(233, 198, 123);
   }
-
-.centered-image {
-    position: absolute; /* Đặt vị trí là absolute để có thể điều chỉnh vị trí tuyệt đối */
-    left: 6.5%;
-    transform: translateY(-12%);
-    padding-bottom: 10px;
-  }
-
-.image-container2 {
-    position: relative; /* Đặt vị trí là relative để tạo nền cho vị trí tuyệt đối */
-  }
-
-.centered-image2 {
-    position: absolute; /* Đặt vị trí là absolute để có thể điều chỉnh vị trí tuyệt đối */
-    left: 86.5%;
-    transform: translateY(-80%);
-    padding-bottom: 10px;
-  }
-
+/*----------------------------------------------------------------------------------------------------------------------*/
 .button-direction {
     display: flex;
     flex-direction: column;
@@ -137,21 +137,7 @@ footer{
         filter: hue-rotate(360deg);
     }
 }
-/*-------------------------------------------------Custom header-------------------------------------------------------------*/
-.outer-header{
-    width: 100%;
-    max-width: 800px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    background: white;
-    padding: 1.8rem;
-    border-radius: 2rem;
-    align-items: center;
-    transform: translateX(42%);
-}
-.content-header{
-    color: rgb(233, 198, 123);
-}
+
 /*-------------------------------------------------Tên phòng-----------------------------------------------------------------*/
 .name-of-room{
     left: -25px;
