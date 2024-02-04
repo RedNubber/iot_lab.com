@@ -365,6 +365,7 @@ footer{
 /*--------------------------------------------------------Slider----------------------------------------------------*/
 .slider{
     transform: translateY(50%);
+    margin-left: 30px;
     height: 100%;
     display: grid;
     text-align: center;
@@ -446,18 +447,17 @@ footer{
 
 /*-----------------------------------------------------Đây là nút nhấn--------------------------------------------------*/
 .wrapper{
-    margin-left: 30px;
-    width: 1080px;
-    height: fit-content;
+    margin-left: 10px;
+    width: 480px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border-radius: 2em;
-    position: absolute;
-    box-sizing: border-box;
     background-color: white;
     font-weight: bold;
+    box-sizing: border-box;
+    position: absolute;
 }
 .progress {
     margin: 20px auto;
@@ -507,8 +507,30 @@ footer{
 .icon1{	
 	color: grey;
 	margin: 10px auto;
+    scale: 75%;
 }
-
+/*--------------------------------------------------------Hàng dưới-------------------------------------------------------*/
+.wrapper1{
+    margin-left: 10px;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    background-color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    position: relative;
+}
+.progress1 {
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 /*--------------------------------------------------------Footer--------------------------------------------------------*/
 .footercontainer{
     width: 100%;
