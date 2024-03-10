@@ -176,9 +176,10 @@ $(document).ready(function(){
   //---------------------Slider--------------------------                          
 const slide_value=document.querySelector("span");
 const input_slide_value=document.querySelector("input");
-
+const volumee=document.getElementById("volumee");
 input_slide_value.oninput = (()=>{
 let value = input_slide_value.value;
+volumee.style.opacity = value/200;
 firebase.database().ref("/Phong Khach").update({
 Vol: value
 });
@@ -191,6 +192,7 @@ if (fb_value !== null) {
 slide_value.textContent = fb_value;
 slide_value.style.left = (fb_value / 2) + "%";
 input_slide_value.value=fb_value;
+volumee.style.opacity = fb_value/200;
 }
 });                          
 //Clock
